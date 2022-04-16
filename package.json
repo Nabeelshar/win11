@@ -1,4 +1,5 @@
 {
+  "home": "https://nabeelshar.github.io/win11/",
   "name": "win11React",
   "description": "Win11 made in React",
   "repository": "https://github.com/blueedgetechno/win11React",
@@ -41,6 +42,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -67,6 +70,7 @@
     ]
   },
   "devDependencies": {
-    "@tauri-apps/cli": "1.0.0-rc.2"
+    "@tauri-apps/cli": "1.0.0-rc.2",
+    "gh-pages": "^3.2.3"
   }
 }
